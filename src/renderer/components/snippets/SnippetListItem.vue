@@ -321,7 +321,6 @@ onUnmounted(() => {
   &::after {
     content: '';
     height: 1px;
-    background-color: var(--color-border);
     position: absolute;
     width: calc(100% - calc(var(--spacing-sm) * 2));
     bottom: 1px;
