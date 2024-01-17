@@ -9,10 +9,11 @@
     <AppActionButton
       v-if="!query"
       v-tooltip="i18n.t('newSnippet')"
-      class="item"
+      class="item new-snippet-btn"
       @click="onAddNewSnippet"
     >
       <UniconsPlus />
+      <span>Snippet</span>
     </AppActionButton>
     <AppActionButton
       v-else
@@ -64,7 +65,7 @@ onUnmounted(() => {
 .action {
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing-sm);
+  padding: 0 var(--spacing-sm) 0 var(--spacing-xs);
   position: relative;
   top: var(--title-bar-height-offset);
   width: 100%;
@@ -72,10 +73,15 @@ onUnmounted(() => {
     outline: none;
     border: none;
     width: 100%;
-    padding: 0 var(--spacing-xs);
+    padding: 14px var(--spacing-xs);
     height: 24px;
-    background-color: var(--color-snippet-list);
+    margin-left: 6px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 4px;
     color: var(--color-text);
+    &:focus {
+      outline: 1px solid rgb(206, 208, 232);
+    }
   }
   :deep(svg) {
     flex-shrink: 0;
@@ -84,6 +90,19 @@ onUnmounted(() => {
   .item {
     position: relative;
     right: -8px;
+    cursor: pointer;
+    color: white !important;
+    padding: 5px 9px;
+    &.new-snippet-btn {
+      background-color: var(--color-primary);
+    }
+    &.new-snippet-btn svg {
+      fill: white !important;
+      margin-right: 2px;
+    }
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 }
 </style>

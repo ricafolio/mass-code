@@ -94,7 +94,6 @@ onUnmounted(() => {
 .header {
   padding-top: var(--title-bar-height);
   display: flex;
-  border-bottom: 1px solid var(--color-border);
 }
 .body {
   padding: var(--spacing-xs) 0;
