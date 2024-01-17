@@ -348,6 +348,9 @@ onUnmounted(() => {
     .footer {
       color: #fff !important;
     }
+    .date {
+      color: #fff !important;
+    }
   }
   &.is-selected {
     &::before {
