@@ -194,7 +194,7 @@ watch(
 .item {
   display: flex;
   align-items: center;
-  padding: 4px 0;
+  padding: 8px 0;
   position: relative;
   width: 100%;
   z-index: 2;
