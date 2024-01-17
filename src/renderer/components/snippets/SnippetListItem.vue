@@ -386,7 +386,7 @@ onUnmounted(() => {
       bottom: 3px;
       border-radius: 5px;
       z-index: 1;
-      background-color: var(--color-sidebar-item-selected);
+      background-color: var(--color-snippet-selected);
     }
   }
 }
