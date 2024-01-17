@@ -313,6 +313,7 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .item {
+  cursor: pointer;
   padding: 10px var(--spacing-sm);
   position: relative;
   z-index: 2;
@@ -370,6 +371,19 @@ onUnmounted(() => {
       font-size: 11px;
       position: relative;
       top: 1px;
+    }
+  }
+  &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 8px;
+      right: 8px;
+      bottom: 3px;
+      border-radius: 5px;
+      z-index: 1;
+      background-color: var(--color-sidebar-item-selected);
     }
   }
 }
