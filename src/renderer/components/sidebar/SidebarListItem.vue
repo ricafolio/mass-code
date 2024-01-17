@@ -263,4 +263,7 @@ watch(
     }
   }
 }
+.item:hover {
+  cursor: pointer;
+}
 </style>

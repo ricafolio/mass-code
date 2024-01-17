@@ -138,6 +138,10 @@ onUnmounted(() => {
     h6 {
       color: var(--color-text);
     }
+    h6:hover {
+      cursor: pointer;
+      filter: brightness(0.5);
+    }
   }
   &__title,
   &__action {
