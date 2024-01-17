@@ -222,6 +222,12 @@ watch(
     }
   }
   &.is-focused {
+    &:hover {
+      &::before {
+        background-color: var(--color-primary) !important;
+        filter: brightness(0.9);
+      }
+    }
     &.is-system,
     &.is-tag {
       color: #fff;
@@ -262,7 +268,7 @@ watch(
       transform: rotate(90deg);
     }
   }
-  &:hover {
+  &.is-system:hover {
     cursor: pointer;
     &::before {
       content: '';

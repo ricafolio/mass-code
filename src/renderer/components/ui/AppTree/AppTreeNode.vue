@@ -361,6 +361,28 @@ $color-grey: #8c8c8c;
         }
       }
     }
+    &.is-focused {
+      &:hover {
+        &::before {
+          background-color: var(--color-primary) !important;
+          filter: brightness(0.9);
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      &::before {
+        content: '';
+        left: v-bind(hoveredOffsetStyle);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 0;
+        border-radius: 5px;
+        background-color: var(--color-sidebar-item-selected) !important;
+      }
+    }
   }
   &__name {
     display: flex;
