@@ -68,7 +68,7 @@ const onChange = (v: string[]) => {
     .ti-new-tag-input-wrapper {
       margin: 0;
       input {
-        size: 11px;
+        size: 16px;
       }
     }
     .ti-new-tag-input {
@@ -82,12 +82,25 @@ const onChange = (v: string[]) => {
   }
   :deep(.ti-tag) {
     margin: 0;
-    padding: 0 4px;
+    padding: 6px 3px 6px 8px;
     border-radius: 3px;
-    font-size: 11px;
+    font-size: 16px;
+    /* background-color: var(--color-sidebar) !important; */
     .ti-icon-close {
+      visibility: hidden;
       position: relative;
       top: 1px;
+      margin-left: 2px;
+      color: rgb(163, 163, 163);
+      &:hover {
+        background-color: rgb(236, 236, 236);
+        border-radius: 100px;
+      }
+    }
+    &:hover {
+      .ti-icon-close {
+        visibility: visible;
+      }
     }
   }
 }

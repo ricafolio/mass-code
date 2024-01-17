@@ -51,8 +51,9 @@ const tagsHeight = appStore.sizes.editor.tagsHeight + 'px'
 
 <style lang="scss" scoped>
 .tags {
+  font-size: 16px;
   height: v-bind(tagsHeight);
-  padding: 0 var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-xs);
   display: flex;
   align-items: center;
 }
