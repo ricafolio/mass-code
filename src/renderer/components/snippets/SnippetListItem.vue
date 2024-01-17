@@ -313,7 +313,7 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .item {
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 10px var(--spacing-sm);
   position: relative;
   z-index: 2;
   user-select: none;
