@@ -262,8 +262,19 @@ watch(
       transform: rotate(90deg);
     }
   }
-}
-.item:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      border-radius: 5px;
+      z-index: -1;
+      background-color: var(--color-sidebar-item-selected);
+    }
+  }
 }
 </style>
