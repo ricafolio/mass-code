@@ -168,7 +168,7 @@ onUnmounted(() => {
     top: var(--title-bar-height-offset);
   }
   .name {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     input {
       border: 0;
