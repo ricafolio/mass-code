@@ -96,7 +96,7 @@ onUnmounted(() => {
   display: flex;
 }
 .body {
-  padding: var(--spacing-xs) 0;
+  padding: var(--spacing-xs) var(--spacing-xs);
   :deep(.ps) {
     height: calc(100vh - 60px);
     padding-top: 2px;

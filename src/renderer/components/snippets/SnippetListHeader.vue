@@ -65,7 +65,7 @@ onUnmounted(() => {
 .action {
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing-sm) 0 var(--spacing-xs);
+  padding: 0 var(--spacing-md) 0 var(--spacing-sm);
   position: relative;
   top: var(--title-bar-height-offset);
   width: 100%;
