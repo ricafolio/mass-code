@@ -99,7 +99,7 @@ const isSearchMode = computed(() => {
 <style lang="scss" scoped>
 .snippets-view {
   overflow: hidden;
-  padding-top: var(--title-bar-height);
+  background-color: var(--color-sidebar);
   display: flex;
   flex-flow: column;
 }

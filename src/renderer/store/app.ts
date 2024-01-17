@@ -58,7 +58,7 @@ export const useAppStore = defineStore('app', {
         titleHeight: 34,
         fragmentsHeight: 25,
         tagsHeight: 40,
-        descriptionHeight: 58,
+        descriptionHeight: 48,
         footerHeight: 30
       }
     },

@@ -56,7 +56,7 @@ watch(
 <style lang="scss" scoped>
 .description {
   padding: 0 var(--spacing-xs);
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-text);
   position: relative;
   :empty::before {

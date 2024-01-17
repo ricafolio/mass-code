@@ -65,6 +65,7 @@ const onChange = (v: string[]) => {
   }
   :deep(.ti-tags) {
     gap: 4px;
+    background-color: var(--color-sidebar) !important;
     .ti-new-tag-input-wrapper {
       margin: 0;
       input {
@@ -72,6 +73,8 @@ const onChange = (v: string[]) => {
       }
     }
     .ti-new-tag-input {
+      font-size: 14px;
+      background-color: transparent !important;
     }
   }
   :deep(.ti-autocomplete) {
@@ -82,8 +85,8 @@ const onChange = (v: string[]) => {
   }
   :deep(.ti-tag) {
     margin: 0;
-    padding: 6px 3px 6px 8px;
-    border-radius: 3px;
+    padding: 6px 4px 6px 14px;
+    border-radius: 15px;
     font-size: 16px;
     /* background-color: var(--color-sidebar) !important; */
     .ti-icon-close {

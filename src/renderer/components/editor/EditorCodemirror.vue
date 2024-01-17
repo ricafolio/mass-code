@@ -353,9 +353,11 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .editor {
-  padding-top: 4px;
+  padding: 4px 18px 0;
   height: 100%;
   :deep(.CodeMirror) {
+    border-radius: 12px !important;
+    padding-top: 8px;
     height: 100%;
     font-size: v-bind(fontSize);
     font-family: v-bind(fontFamily);
@@ -388,13 +390,20 @@ onUnmounted(() => {
   .body {
     height: v-bind(editorHeight);
   }
+  /* :deep(.CodeMirror) {
+    background-color: #f7f7f7 !important;
+  }
+  :deep(.CodeMirror-gutters) {
+    background: #f7f7f7;
+    border-right-color: #f7f7f7 !important;
+  } */
   .footer {
     height: v-bind(footerHeight);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--spacing-xs);
-    font-size: 12px;
+    font-size: 14px;
     select {
       background-color: var(--color-bg);
     }
@@ -405,5 +414,8 @@ onUnmounted(() => {
   border: 0;
   outline: none;
   color: var(--color-text);
+  background-color: transparent !important;
+  padding: 2px 0;
+  border-radius: 90px;
 }
 </style>

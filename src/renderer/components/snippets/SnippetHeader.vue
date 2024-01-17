@@ -158,6 +158,8 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .header {
+  padding: var(--title-bar-height) 10px 0 10px;
+
   .top {
     padding: 0 var(--spacing-xs);
     display: flex;
@@ -176,7 +178,7 @@ onUnmounted(() => {
       outline: none;
       line-height: 32px;
       text-overflow: ellipsis;
-      background-color: var(--color-bg);
+      background-color: transparent;
       color: var(--color-text);
     }
   }
