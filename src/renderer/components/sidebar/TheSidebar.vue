@@ -76,7 +76,7 @@
     </SidebarList>
     <div
       ref="gutterRef"
-      class="gutter-line"
+      class="gutter-lineless"
     />
   </div>
 </template>

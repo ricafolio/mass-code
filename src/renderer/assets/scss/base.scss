@@ -70,6 +70,23 @@ h6 {
     z-index: 10;
   }
 }
+.gutter-lineless {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--color-border);
+  cursor: col-resize;
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 8px;
+    position: absolute;
+    left: -3px;
+    z-index: 10;
+  }
+}
 .gutter-line-horizontal {
   position: absolute;
   top: 0;
