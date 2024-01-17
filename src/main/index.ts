@@ -39,7 +39,8 @@ function createWindow () {
       nodeIntegration: true,
       contextIsolation: true,
       webSecurity: false
-    }
+    },
+    trafficLightPosition: { x: 10, y: 10 }
   })
 
   Menu.setApplicationMenu(mainMenu)
