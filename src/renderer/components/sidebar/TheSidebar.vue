@@ -115,9 +115,9 @@ const sidebarRef = ref()
 const gutterRef = ref()
 
 const systemFolders: SidebarSystemFolder[] = [
+  { name: i18n.t('sidebar.allSnippets'), alias: 'all', icon: Archive },
   { name: i18n.t('sidebar.inbox'), alias: 'inbox', icon: Inbox },
   { name: i18n.t('sidebar.favorites'), alias: 'favorites', icon: Favorite },
-  { name: i18n.t('sidebar.allSnippets'), alias: 'all', icon: Archive },
   { name: i18n.t('sidebar.trash'), alias: 'trash', icon: Trash }
 ]
 
