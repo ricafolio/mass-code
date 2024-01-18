@@ -170,7 +170,7 @@ onUnmounted(() => {
     top: var(--title-bar-height-offset);
   }
   .name {
-    font-size: 18px;
+    font-size: 19px;
     width: 100%;
     input {
       border: 0;
@@ -180,6 +180,7 @@ onUnmounted(() => {
       text-overflow: ellipsis;
       background-color: transparent;
       color: var(--color-text);
+      font-weight: 500;
     }
   }
   .action {
