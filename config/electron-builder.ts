@@ -23,7 +23,7 @@ if (isTestBuild) {
 export default {
   appId: 'io.masscode.app',
   artifactName,
-  productName: 'massCode',
+  productName: 'Mass Code',
   directories: {
     output: path.resolve(__dirname, '../../dist')
   },
