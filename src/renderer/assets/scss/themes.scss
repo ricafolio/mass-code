@@ -48,7 +48,8 @@
 
 [data-theme='dark:one'] {
   --color-primary: hsl(215, 69%, 45%);
-  
+  --color-bg-selection: #d7d4ff54;
+
   --color-bg: hsl(220, 13%, 18%);
 
   --color-contrast-lower: hsl(220, 13%, 20%);
@@ -83,6 +84,7 @@
 
 [data-theme='dark:dracula'] {
   --color-primary: hsl(215, 69%, 45%);
+  --color-bg-selection: #d7d4ff54;
 
   // при конвертации в hsl цвет отличается, поэтому оставляем в hex
   --color-bg: #282A36; 
@@ -119,6 +121,7 @@
 
 [data-theme='dark:monokai'] {
   --color-primary: hsl(215, 69%, 45%);
+  --color-bg-selection: #d7d4ff54;
 
   // при конвертации в hsl цвет отличается, поэтому оставляем в hex
   --color-bg: #272822;
@@ -155,6 +158,7 @@
 
 [data-theme='dark:merbivore'] {
   --color-primary: hsl(215, 69%, 45%);
+  --color-bg-selection: #d7d4ff54;
 
   --color-bg: hsl(0, 0%, 11%);
 
@@ -190,6 +194,7 @@
 
 [data-theme='dark:material'] {
   --color-primary: hsl(215, 69%, 45%);
+  --color-bg-selection: #d7d4ff54;
 
    // при конвертации в hsl цвет отличается, поэтому оставляем в hex
   --color-bg: #263238;
@@ -227,6 +232,7 @@
 
 [data-theme='dark:material-palenight'] {
   --color-primary: hsl(215, 69%, 45%);
+  --color-bg-selection: #d7d4ff54;
 
    // при конвертации в hsl цвет отличается, поэтому оставляем в hex
   --color-bg: #292D3F;
@@ -263,7 +269,8 @@
 }
 
 [data-theme='dark:tokyo-night'] {
-  --color-primary: hsl(215, 69%, 45%);
+  --color-primary: hsl(237, 90%, 42%);
+  --color-bg-selection: #d7d4ff54;
 
    // при конвертации в hsl цвет отличается, поэтому оставляем в hex
   --color-bg: #1C2029;
