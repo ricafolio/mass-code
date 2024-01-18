@@ -4,9 +4,11 @@
       <h3>{{ title }}</h3>
       <AppActionButton
         v-tooltip="i18n.t('common:close')"
+        class="close-btn"
         @click="onClose"
       >
-        <UniconsTimes />
+        <span>Go back</span>
+        <UniconsAngleRightB />
       </AppActionButton>
     </div>
     <div class="body">
@@ -53,6 +55,14 @@ function onClose () {
   .body {
     padding: 0 var(--spacing-sm);
     display: grid;
+  }
+
+  .close-btn {
+    cursor: pointer;
+    font-size: 16px;
+    span {
+      margin-right: 4px;
+    }
   }
 }
 </style>
