@@ -1,6 +1,7 @@
 <template>
   <AppLayoutOneColumn
     :title="i18n.t('preferences:title')"
+    class="preferences-view"
     @close="toHome"
   >
     <AppMenu v-model="appStore.selectedPreferencesMenu">
@@ -53,4 +54,8 @@ const toHome = () => {
 track('preferences')
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.preferences-view {
+  margin-top: 2rem;
+}
+</style>

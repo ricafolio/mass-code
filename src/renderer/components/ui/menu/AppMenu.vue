@@ -93,11 +93,19 @@ provide(menuKey, {
     }
   }
   .name {
-    padding: var(--spacing-xs);
+    cursor: pointer;
+    padding: var(--spacing-xs) 12px;
+    margin: 4px 0;
     user-select: none;
+    border-radius: 5px;
     &.is-selected {
-      border-radius: 5px;
       background-color: var(--color-menu-selected);
+    }
+    &:hover {
+      background-color: var(--color-menu-selected);
+    }
+    &:first-child {
+      margin-top: 0 !important;
     }
   }
   .body {
