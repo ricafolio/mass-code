@@ -418,7 +418,7 @@ onUnmounted(() => {
   padding-bottom: 4px;
 
   .folder {
-    color: #4740a7;
+    color: var(--color-contrast-medium);
   }
 }
 </style>
