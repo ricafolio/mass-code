@@ -297,6 +297,8 @@
   --color-menu-selected: var(--color-contrast-lower-alt);
 
   --color-tag-delete: var(--color-contrast-lower-alt3);
+  --color-tag-bg: var(--color-contrast-lower);
+  --color-tag-text: var(--color-text);
 }
 
 [data-theme^="dark"] {

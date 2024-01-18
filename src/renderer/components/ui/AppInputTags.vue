@@ -88,7 +88,6 @@ const onChange = (v: string[]) => {
     padding: 6px 4px 6px 14px;
     border-radius: 15px;
     font-size: 16px;
-    /* background-color: var(--color-sidebar) !important; */
     .ti-icon-close {
       visibility: hidden;
       position: relative;
@@ -96,7 +95,7 @@ const onChange = (v: string[]) => {
       margin-left: 2px;
       color: rgb(163, 163, 163);
       &:hover {
-        background-color: rgb(236, 236, 236);
+        background-color: var(--color-contrast-lower-low);
         border-radius: 100px;
       }
     }
