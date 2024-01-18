@@ -115,7 +115,7 @@ export const themes: ThemeConfig[] = [
     }
   },
   {
-    name: 'Ricafolio-Light-Theme',
+    name: 'Github',
     label: 'Ricafolio Mono',
     value: 'light:ricafolio',
     loader: () => import('./themes/ricafolio-light-theme.json'),
