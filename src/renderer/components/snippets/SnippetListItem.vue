@@ -344,10 +344,9 @@ onUnmounted(() => {
       background-color: var(--color-primary) !important;
     }
     .name,
-    .footer {
-      color: #fff !important;
-    }
-    .date {
+    .footer,
+    .date,
+    .folder {
       color: #fff !important;
     }
   }
@@ -417,5 +416,9 @@ onUnmounted(() => {
   color: var(--color-text-3);
   padding-top: 6px;
   padding-bottom: 4px;
+
+  .folder {
+    color: #4740a7;
+  }
 }
 </style>
