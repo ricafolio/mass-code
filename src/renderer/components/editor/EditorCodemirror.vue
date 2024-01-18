@@ -357,11 +357,11 @@ onUnmounted(() => {
   height: 100%;
   :deep(.CodeMirror) {
     border-radius: 12px !important;
-    padding-top: 8px;
     height: 100%;
     font-size: v-bind(fontSize);
     font-family: v-bind(fontFamily);
     line-height: calc(v-bind(fontSize) * 1.5);
+    background-color: var(--color-bg-editor) !important;
   }
   :deep(.CodeMirror-overlayscroll-vertical div) {
     background-color: rgba(121, 121, 121, 0.8);
@@ -386,6 +386,10 @@ onUnmounted(() => {
   :deep(.mark--light) {
     background-color: var(--color-primary);
     color: #fff;
+  }
+  :deep(.CodeMirror-gutters) {
+    background-color: var(--color-bg-editor) !important;
+    border-color: var(--color-contrast-lower-alt) !important;
   }
   .body {
     height: v-bind(editorHeight);
