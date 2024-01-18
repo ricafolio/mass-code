@@ -65,15 +65,6 @@ watch(
     color: var(--color-text-3);
     background-color: transparent;
   }
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-border);
-    left: 0;
-    bottom: -1px;
-  }
   &.no-border-bottom {
     &::after {
       content: none;
