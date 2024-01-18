@@ -44,6 +44,13 @@
   --color-bg: hsl(0, 0%, 98%);
 }
 
+[data-theme='light:ricafolio'] {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-sidebar: rgba(240, 240, 240, 0.577);
+  --color-sidebar-item-selected: hsla(225, 3%, 53%, 0.118);
+  --color-bg-selection: #5a5a5a49;
+}
+
 // DARK
 
 [data-theme='dark:one'] {

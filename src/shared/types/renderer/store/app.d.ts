@@ -11,6 +11,7 @@ export type Theme =
   | 'light:github'
   | 'light:material'
   | 'light:solarized'
+  | 'light:ricafolio'
 
 export interface AppSizes {
   titlebar: number

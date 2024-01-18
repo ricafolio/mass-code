@@ -113,6 +113,16 @@ export const themes: ThemeConfig[] = [
       background: '#FAFAFA',
       divider: '#FAFAFA'
     }
+  },
+  {
+    name: 'Ricafolio-Light-Theme',
+    label: 'Ricafolio Mono',
+    value: 'light:ricafolio',
+    loader: () => import('./themes/ricafolio-light-theme.json'),
+    gutterSettings: {
+      background: '#FFFFFF',
+      divider: '#FFFFFF'
+    }
   }
 ]
 
