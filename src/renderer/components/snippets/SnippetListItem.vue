@@ -415,6 +415,7 @@ onUnmounted(() => {
   z-index: 1;
   justify-content: space-between;
   color: var(--color-text-3);
-  padding-top: var(--spacing-sm);
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 </style>
