@@ -7,7 +7,7 @@
         snippetStore.isFragmentsShow && snippetStore.fragment === 0,
       'active-last-child-fragment':
         snippetStore.isFragmentsShow &&
-        snippetStore.fragment === snippetStore.fragmentLabels.length - 1
+        snippetStore.fragment === (snippetStore.fragmentLabels?.length ?? 0) - 1
     }"
   >
     <div
