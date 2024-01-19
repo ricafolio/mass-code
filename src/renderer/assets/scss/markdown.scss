@@ -938,6 +938,10 @@
   filter: invert(50%);
 }
 
+.markdown-body .CodeMirror {
+  margin-bottom: 12px;
+}
+
 [data-theme^='light'] {
   .markdown-body {
     pre {

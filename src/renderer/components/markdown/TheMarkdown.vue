@@ -292,7 +292,7 @@ window.addEventListener('resize', () => {
 
 <style lang="scss" scoped>
 .markdown {
-  padding: 0 var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   &-body {
     --scale: v-bind(props.scale);
   }
