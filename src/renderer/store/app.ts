@@ -55,11 +55,11 @@ export const useAppStore = defineStore('app', {
       snippetList: 250,
       codePreviewHeight: 200,
       editor: {
-        titleHeight: 34,
-        fragmentsHeight: 25,
+        titleHeight: 29,
+        fragmentsHeight: 30,
         tagsHeight: 40,
         descriptionHeight: 48,
-        footerHeight: 30
+        footerHeight: 34
       }
     },
     editor: EDITOR_DEFAULTS,
