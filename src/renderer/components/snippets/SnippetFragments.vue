@@ -36,18 +36,23 @@ const fragmentHeight = appStore.sizes.editor.fragmentsHeight + 'px'
   display: flex;
   align-items: center;
   height: v-bind(fragmentHeight);
-  // overflow-y: auto;
+  margin: 4px 8px 0;
+  /* // overflow-y: auto; */
   .item {
-    padding: 0 var(--spacing-xs);
+    cursor: pointer;
+    padding: 0 calc(var(--spacing-xs) + 4px);
+    margin-right: 2px;
     display: flex;
     align-items: center;
     height: v-bind(fragmentHeight);
     width: 100%;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
+    border-radius: 8px 8px 0 0;
     min-width: 100px;
+    &:last-child {
+      margin-right: 0;
+    }
     &.is-active {
-      background-color: var(--color-contrast-lower);
+      background-color: var(--color-bg-editor);
     }
   }
 }

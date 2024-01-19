@@ -1,5 +1,15 @@
 <template>
-  <div class="editor">
+  <div
+    :class="{
+      editor: true,
+      'has-fragment': snippetStore.isFragmentsShow,
+      'active-first-child-fragment':
+        snippetStore.isFragmentsShow && snippetStore.fragment === 0,
+      'active-last-child-fragment':
+        snippetStore.isFragmentsShow &&
+        snippetStore.fragment === snippetStore.fragmentLabels.length - 1
+    }"
+  >
     <div
       ref="editorRef"
       class="body"
@@ -355,6 +365,19 @@ onUnmounted(() => {
 .editor {
   padding: 4px 18px 0;
   height: 100%;
+  &.has-fragment {
+    padding-top: 0;
+  }
+  &.active-first-child-fragment {
+    :deep(.CodeMirror) {
+      border-top-left-radius: 0 !important;
+    }
+  }
+  &.active-last-child-fragment {
+    :deep(.CodeMirror) {
+      border-top-right-radius: 0 !important;
+    }
+  }
   :deep(.CodeMirror) {
     border-radius: 12px !important;
     height: 100%;

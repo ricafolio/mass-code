@@ -82,8 +82,8 @@
     </div>
     <div class="bottom">
       <SnippetsDescription v-show="snippetStore.isDescriptionShow" />
-      <SnippetFragments v-if="snippetStore.isFragmentsShow" />
       <SnippetsTags v-if="isTagsShow" />
+      <SnippetFragments v-if="snippetStore.isFragmentsShow" />
     </div>
   </div>
 </template>
