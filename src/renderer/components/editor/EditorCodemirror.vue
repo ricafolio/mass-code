@@ -429,20 +429,20 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 var(--spacing-xs);
     font-size: 14px;
-    select {
-      background-color: var(--color-bg);
-    }
   }
 }
 .lang-selector {
+  cursor: pointer;
   -webkit-appearance: none;
   border: 0;
   outline: none;
   color: var(--color-text);
-  background-color: transparent !important;
-  padding: 2px 0;
-  border-radius: 90px;
+  background-color: var(--color-bg-editor) !important;
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 0;
+  &:hover {
+    filter: brightness(0.9);
+  }
 }
 </style>
